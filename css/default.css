@@ -2,7 +2,7 @@
 
 Domain: http://client.xeldelena.com/eva
 Author: XEL Media & Design
-Description: EVA is a clean default website development starter theme.
+Description: EVA is a clean default website development starter threme.
 Version: 1.2
 
 /* --------------------------------------------------------------
@@ -10,145 +10,9 @@ Version: 1.2
 -------------------------------------------------------------- */
 
 
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-
-
-/* HTML5 display-role reset for older browsers */
-
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-	display: block;
-}
-
-body {
-	line-height: 1;
-}
-
-ol,
-ul {
-	list-style: none;
-}
-
-blockquote,
-q {
-	quotes: none;
-}
-
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-	content: '';
-	content: none;
-}
-
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
-/* --------------------------------------------------------------
-/* =Imports
--------------------------------------------------------------- */
-
-@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css');
-@import url('font/icomoon/style.css');
+/*============================================
+IMPORTS
+=============================================*/
 
 /*family fonts*/
 
@@ -165,9 +29,9 @@ table {
 /*font-family: 'Poiret One', cursive;*/
 
 
-/* --------------------------------------------------------------
-/* =Viewport
--------------------------------------------------------------- */
+/*============================================
+VIEWPORTS
+=============================================*/
 
 @-moz-viewport {
 	width: device-width;
@@ -189,9 +53,9 @@ table {
 	width: device-width;
 }
 
-/* --------------------------------------------------------------
-/* =Basis
--------------------------------------------------------------- */
+/*============================================
+BASICS
+=============================================*/
 
 *, *:after, *:before {
 	-webkit-box-sizing: border-box;
@@ -220,6 +84,10 @@ body {
 
 }
 
+/*============================================
+PAGE FADE EFFECT WHEN LOADED
+=============================================*/
+
 #page {
 	z-index: 10;
 	position: relative;
@@ -238,16 +106,9 @@ body {
 	margin: 0;
 }
 
-
-section.default {
-	padding: 100px 0px;
-}
-
-
-
-/* --------------------------------------------------------------
-/* =TYPOGRAPHY
--------------------------------------------------------------- */
+/*============================================
+TYPOGRAPHY
+=============================================*/
 
 h1,
 h2,
@@ -256,38 +117,37 @@ h4,
 h5,
 h6 {
 	/*	font-weight: bold;*/
-	padding-bottom: 15px;
 	font-weight: 300;
 }
 
 h1 {
-	font-size: 3.5em;
+	font-size: 4rem;
 }
 
 h2 {
-	font-size: 3em;
+	font-size: 3.5rem;
 }
 
 h3 {
-	font-size: 2.5em;
+	font-size: 3rem;
 }
 
 h4 {
-	font-size: 2em;
+	font-size: 2.5rem;
 }
 
 h5 {
-	font-size: 1.5em;
+	font-size: 2rem;
 }
 
 h6 {
-	font-size: 1em;
+	font-size: 1.5rem;
 }
 
 P {
 	color: #666666;
 	margin-bottom: 34px;
-	font-size: 0.9em;
+	font-size: 1.8rem;
 	line-height: 26px;
 	font-weight: 300;
 	letter-spacing: 0.6px;
@@ -308,6 +168,17 @@ a {
 a:hover,
 a:focus {
 	opacity: 0.5;
+ 	outline: none;
+ 	text-decoration: none;
+ 	color: inherit;
+}
+
+div {
+ -webkit-transition: all 0.3s ease;
+ -moz-transition: all 0.3s ease;
+ -ms-transition: all 0.3s ease;
+ -o-transition: all 0.3s ease;
+ transition: all 0.3s ease;
 }
 
 .custom-colour {
@@ -376,6 +247,10 @@ a:focus {
 	float: right;
 }
 
+/*============================================
+BACKGROUND COLOR
+=============================================*/
+
 .black-cover {
 	background-color: #0d0d0d;
 	fill: #0d0d0d;
@@ -386,6 +261,9 @@ a:focus {
 	fill: #fff;
 }
 
+.threme-color {
+	/*insert-here*/
+}
 
 /*glass background */
 
@@ -394,8 +272,63 @@ a:focus {
 	height: 100% !important;
 }
 
+/*============================================
+PADDING
+=============================================*/
+.padding-100-0 {
+	padding: 100px 0px;
+}
 
-/*center of a center div*/
+.padding-top-10 {
+ padding-top: 10px;
+}
+
+.padding-top-20 {
+ padding-top: 20px;
+}
+
+.padding-top-30 {
+ padding-top: 30px;
+}
+
+.padding-top-40 {
+ padding-top: 40px;
+}
+
+.padding-top-50 {
+ padding-top: 50px;
+}
+
+.padding-bottom-10 {
+ padding-bottom: 10px;
+}
+
+.padding-bottom-20 {
+ padding-bottom: 20px;
+}
+
+.padding-bottom-30 {
+ padding-bottom: 30px;
+}
+
+.padding-bottom-40 {
+ padding-bottom: 40px;
+}
+
+.padding-bottom-50 {
+ padding-bottom: 50px;
+}
+
+/*padding left and right 0*/
+
+.padding-auto-0 {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+/*============================================
+GRID
+=============================================*/
 
 .center-vertically {
 	display: flex;
@@ -413,38 +346,72 @@ a:focus {
 	background-position: bottom center;
 }
 
-/* --------------------------------------------------------------
-/* =flex and flex box
--------------------------------------------------------------- */
+/*============================================
+FLEX / FLEXBOX
+=============================================*/
 
 .flex {
-	display: -webkit-box !important;
-	display: -webkit-flex !important;
-	display: -ms-flexbox !important;
-	display: flex !important;
-	flex-wrap: wrap;
-	display: table-cell; // ie9
+ display: -webkit-box !important;
+ display: -webkit-flex !important;
+ display: -ms-flexbox !important;
+ display: flex !important;
+ flex-wrap: wrap;
+ display: table-cell; // ie9
 }
 
 .flex-box {
-	-webkit-flex: 1 1;
-	-webkit-box-flex: 0;
-	-ms-flex: 1 1;
-	flex: 1 1;
+ -webkit-flex: 1 1;
+ -webkit-box-flex: 0;
+ -ms-flex: 1 1;
+ flex: 1 1;
 }
 
-.custom-flex-box {
-	-webkit-flex: 1 250px;
-	-webkit-box-flex: 0;
-	-ms-flex: 1 250px;
-	flex: 1 250px;
-	background: #cd865c;
-	margin: 10px;
-	padding: 30px;
+.flex-box-100 {
+ -webkit-flex: 1 100px;
+ -webkit-box-flex: 0;
+ -ms-flex: 1 100px;
+ flex: 1 100px;
 }
-/* --------------------------------------------------------------
-/* =Parallax
--------------------------------------------------------------- */
+
+.flex-box-200 {
+ -webkit-flex: 1 200px;
+ -webkit-box-flex: 0;
+ -ms-flex: 1 200px;
+ flex: 1 200px;
+}
+
+.flex-box-250 {
+ -webkit-flex: 1 250px;
+ -webkit-box-flex: 0;
+ -ms-flex: 1 250px;
+ flex: 1 250px;
+}
+
+.flex-box-300 {
+ -webkit-flex: 1 300px;
+ -webkit-box-flex: 0;
+ -ms-flex: 1 300px;
+ flex: 1 300px;
+}
+
+.flex-box-400 {
+ -webkit-flex: 1 400px;
+ -webkit-box-flex: 0;
+ -ms-flex: 1 400px;
+ flex: 1 400px;
+}
+
+.flex-box-500 {
+ -webkit-flex: 1 500px;
+ -webkit-box-flex: 0;
+ -ms-flex: 1 500px;
+ flex: 1 500px;
+}
+
+
+/*============================================
+PARALLAX
+=============================================*/
 
 section.module.parallax {
 	background-position: 50% 50%;
@@ -479,9 +446,9 @@ section.module.parallax-4 {
 }
 
 
-/* --------------------------------------------------------------
-/* =Seperate
--------------------------------------------------------------- */
+/*============================================
+SEPERATOR X $ Y
+=============================================*/
 
 .separator-x {
 	position: relative;
@@ -516,15 +483,15 @@ hr {
 }
 
 
-/* --------------------------------------------------------------
-/* =Buttons
--------------------------------------------------------------- */
+/*============================================
+BUTTONS
+=============================================*/
 
 .btn {
 	text-shadow: none;
 	box-shadow: none;
 	border-radius: 0;
-	padding: 0.75em 1em;
+	padding: 0.75rem 1rem;
 	border: 2px solid;
 	font-weight: normal;
 	text-transform: uppercase;
@@ -559,9 +526,9 @@ hr {
 	background: #c12e2a;
 }
 
-/* --------------------------------------------------------------
-/* =Easily clear floats by adding .clearfix to the parent element.
--------------------------------------------------------------- */
+/*============================================
+CLEARFIX - Easily clear floats by adding .clearfix to the parent elrement.
+=============================================*/
 
 .clearfix:after {
 	content: ".";
@@ -585,13 +552,14 @@ html[xmlns] .clearfix {
 }
 
 
-/* --------------------------------------------------------------
-/* =Blockquotes
--------------------------------------------------------------- */
+/*============================================
+BLOCKQUOTES
+=============================================*/
+
 
 blockquote {
-	margin: 1.5em 10px;
-	padding: 0.5em 10px;
+	margin: 1.5rem 10px;
+	padding: 0.5rem 10px;
 	quotes: "\201C""\201D""\2018""\2019";
 	border: none;
 }
@@ -599,29 +567,28 @@ blockquote {
 blockquote:before {
 	color: #888;
 	content: open-quote;
-	font-size: 4em;
-	line-height: 0.1em;
-	margin-right: 0.25em;
-	vertical-align: -0.4em;
+	font-size: 4rem;
+	line-height: 0.1rem;
+	margin-right: 0.25rem;
+	vertical-align: -0.4rem;
 }
 
 blockquote:after {
 	color: #888;
 	content: close-quote;
-	font-size: 4em;
-	line-height: 0.1em;
-	margin-left: 0.25em;
-	vertical-align: -0.4em;
+	font-size: 4rem;
+	line-height: 0.1rem;
+	margin-left: 0.25rem;
+	vertical-align: -0.4rem;
 }
 
 blockquote p {
 	display: inline;
 }
 
-
-/* --------------------------------------------------------------
-/* =Masonary
--------------------------------------------------------------- */
+/*============================================
+MASONARY
+=============================================*/
 
 .grid:after {
 	content: '';
@@ -630,18 +597,18 @@ blockquote p {
 }
 
 
-/* ---- .element-item ---- */
+/* ---- .elrement-itrem ---- */
 
 
 /* 5 columns, percentage width */
 
-.grid-item,
+.grid-itrem,
 .grid-sizer {
 	width: 32.2%;
 	margin: 2% 0.5%;
 }
 
-.grid-item {
+.grid-itrem {
 	float: left;
 	padding: 10px;
 	/*
@@ -651,9 +618,9 @@ blockquote p {
 }
 
 
-/* --------------------------------------------------------------
-/* =Navigation
--------------------------------------------------------------- */
+/*============================================
+NAVIGATION
+=============================================*/
 
 .navbar {
 	-webkit-transition: all 0.5s ease-out;
@@ -725,17 +692,18 @@ blockquote p {
 }
 
 
-/* --------------------------------------------------------------
-/* =Video background / Full-height
--------------------------------------------------------------- */
-
+/*============================================
+VIDEO BACKGROUND
+=============================================*/
 .videoContainer
 {
 	position:absolute;
 	height:100%;
 	width:100%;
 	overflow: hidden;
-	background-position: center;
+	top: 0;
+	left: 0;
+
 }
 
 .videoContainer video
@@ -757,8 +725,6 @@ video#bgvid {
 	z-index: 1;
 }
 
-
-video { display: block; }
 
 .flex-video {
 	position: relative;
@@ -783,9 +749,9 @@ video { display: block; }
 
 
 
-/* --------------------------------------------------------------
-/* =Footer
--------------------------------------------------------------- */
+/*============================================
+FOOTER
+=============================================*/
 
 footer {
 	padding: 100px 0;
@@ -796,10 +762,9 @@ footer {
 	text-align: center;
 }
 
-
-/* --------------------------------------------------------------
-/* =Loader
--------------------------------------------------------------- */
+/*============================================
+LOADER
+=============================================*/
 
 .loader {
 	background: #fff;
@@ -809,142 +774,15 @@ footer {
 	z-index: 99999;
 }
 
-.bubblingG {
-	text-align: center;
-	width:78px;
-	height:49px;
-	margin: auto;
-}
+/*add loader here*/
 
-.bubblingG span {
-	display: inline-block;
-	vertical-align: middle;
-	width: 10px;
-	height: 10px;
-	margin: 24px auto;
-	background: rgb(0,0,0);
-	border-radius: 49px;
-	-o-border-radius: 49px;
-	-ms-border-radius: 49px;
-	-webkit-border-radius: 49px;
-	-moz-border-radius: 49px;
-	animation: bubblingG 1.5s infinite alternate;
-	-o-animation: bubblingG 1.5s infinite alternate;
-	-ms-animation: bubblingG 1.5s infinite alternate;
-	-webkit-animation: bubblingG 1.5s infinite alternate;
-	-moz-animation: bubblingG 1.5s infinite alternate;
-}
+/*============================================
+INSERT PROJECT CSS HERE
+=============================================*/
 
-#bubblingG_1 {
-	animation-delay: 0s;
-	-o-animation-delay: 0s;
-	-ms-animation-delay: 0s;
-	-webkit-animation-delay: 0s;
-	-moz-animation-delay: 0s;
-}
-
-#bubblingG_2 {
-	animation-delay: 0.45s;
-	-o-animation-delay: 0.45s;
-	-ms-animation-delay: 0.45s;
-	-webkit-animation-delay: 0.45s;
-	-moz-animation-delay: 0.45s;
-}
-
-#bubblingG_3 {
-	animation-delay: 0.9s;
-	-o-animation-delay: 0.9s;
-	-ms-animation-delay: 0.9s;
-	-webkit-animation-delay: 0.9s;
-	-moz-animation-delay: 0.9s;
-}
-
-
-
-@keyframes bubblingG {
-	0% {
-		width: 10px;
-		height: 10px;
-		background-color:rgb(0,0,0);
-		transform: translateY(0);
-	}
-
-	100% {
-		width: 23px;
-		height: 23px;
-		background-color:rgb(255,255,255);
-		transform: translateY(-20px);
-	}
-}
-
-@-o-keyframes bubblingG {
-	0% {
-		width: 10px;
-		height: 10px;
-		background-color:rgb(0,0,0);
-		-o-transform: translateY(0);
-	}
-
-	100% {
-		width: 23px;
-		height: 23px;
-		background-color:rgb(255,255,255);
-		-o-transform: translateY(-20px);
-	}
-}
-
-@-ms-keyframes bubblingG {
-	0% {
-		width: 10px;
-		height: 10px;
-		background-color:rgb(0,0,0);
-		-ms-transform: translateY(0);
-	}
-
-	100% {
-		width: 23px;
-		height: 23px;
-		background-color:rgb(255,255,255);
-		-ms-transform: translateY(-20px);
-	}
-}
-
-@-webkit-keyframes bubblingG {
-	0% {
-		width: 10px;
-		height: 10px;
-		background-color:rgb(0,0,0);
-		-webkit-transform: translateY(0);
-	}
-
-	100% {
-		width: 23px;
-		height: 23px;
-		background-color:rgb(255,255,255);
-		-webkit-transform: translateY(-20px);
-	}
-}
-
-@-moz-keyframes bubblingG {
-	0% {
-		width: 10px;
-		height: 10px;
-		background-color:rgb(0,0,0);
-		-moz-transform: translateY(0);
-	}
-
-	100% {
-		width: 23px;
-		height: 23px;
-		background-color:rgb(255,255,255);
-		-moz-transform: translateY(-20px);
-	}
-}
-
-
-/* --------------------------------------------------------------
-/* =Media queries
--------------------------------------------------------------- */
+/*============================================
+MEDIA QUERIES
+=============================================*/
 
 
 /* Large devices (large desktops, 1200px and below/up) */
@@ -963,9 +801,9 @@ footer {
 
 /* Small devices (tablets, 768px and below/up) */
 
-@media (min-width: 768px) {}
+@media (min-width: 767px) {}
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
 	.navbar-default {
 		position: fixed;
 		width: 100%;
@@ -973,7 +811,7 @@ footer {
 	section.module.parallax {
 		background-attachment: scroll;
 	}
-	.grid-item,
+	.grid-itrem,
 	.grid-sizer {
 		width: 100%;
 	}
